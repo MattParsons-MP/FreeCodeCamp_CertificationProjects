@@ -1,0 +1,28 @@
+body {
+  background-color: #f6eb09;
+  
+}
+h1, h2, p{
+  text-align: center;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 ;
+  width: 100%;
+  min-height: 2em;
+} 
+
+.inline {
+  display: inline;
+  width: unset;
+  margin: 0 0.5em 0 0;
+}
+
+.inline {
+  vertical-align: middle;
+}
+
+label {
+display: block;
+margin: 0.5rem 0;
+}
