@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8">
+    <title>Winstons Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title" >Winstons Enquiry Form</h1>
+    <p id="description" >Thanks for taking the time to get in touch!</p>
+    <form method="post" id="survey-form" >
+      <fieldset>
+        <label id="name-label" for="name" >Name <input placeholder="Enter name (required)" id="name" type="text" required </label>
+        <label id="email-label" for="email" >Email <input placeholder="Enter email (required)" id="email" type="email" required /label>
+        <label id="number-label" for="number" >Contact number <input placeholder="Enter phone number" type="number" id="number" min="01000000000" max="09999999999" pattern="[0-9]" </label>
+      </fieldset>
+      <h2>YOUR DOG</h2>
+      <fieldset>
+        <h3>Gender</h3>
+        <label> <input class="inline" name="gender" type="radio" value="1" >Male</label>
+        <label> <input class="inline" name="gender" type="radio" value="2" >Female</label>
+        <h3>State</h3>
+        <label> <input class="inline" name="status" type="radio" value="1" >Neutured</label>
+        <label> <input class="inline" name="status" type="radio" value="2" >Un-neutered</label>
+        <h3>Age<h3>
+        <label id="age" for="age">
+          <select id="dropdown" name="dropdown">
+            <option selected value="">(Select one)</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8+</option>
+          </select>
+        </label>
+        <h3>Size</h3>
+        <label>
+          <input class="inline" type="checkbox" value="1" >Small (0-5kg)</input><br>
+          <input class="inline" type="checkbox" value="2" >Medium (5-15kg)</input><br>
+          <input class="inline" type="checkbox" value="3" >Large (15kg+)</input>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Comments
+        <textarea id="comments" name="comments" rows="6" cols="60" placeholder="Please provide information regarding your enquiry" ></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="submit" />
+    </form>  
+  </body>
