@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <meta charset="UTF-8"/>
+    <meta display="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Document</title>
+  </head>
+  <body>
+  <main id="main-doc">
+
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+      <p>First-person view (FPV), also known as remote-person view (RPV), or video piloting, is a method used to control a radio-controlled vehicle from the driver or pilot's viewpoint.</p>
+      <p> Most commonly it is used to pilot a radio-controlled aircraft or other type of unmanned aerial vehicle (UAV) such as a military drone.<p/>
+    </section>
+
+    <section class="main-section" id="what_you_should_already_know">
+      <header>What you should already know</header>
+      <p>This guide assumes you have experience and understanding of how remote vehicles work. If utilising the technology with aircraft, a firm understanding of aircraft flight principles, physics and aircraft systems are crucial.</p>
+      <ul>
+        <li>Limitations and understanding of your systems remote-control link</li>
+        <li>Fail-safe operations, including setup, system testing and alternative methods of failsafe operations</li>
+        <li>Flight controller systems and operations (Aircraft)</li>
+        <li>Full understanding of flight control parameters (Aircraft)</li>
+        <li>License laws and operational rules and regulations</li>
+      </ul>
+      
+
+    </section>
+
+    <section class="main-section" id="basic_fpv_system_components">
+      <header>Basic FPV system components</header>
+      <p>A camera. Firstly an FPV system requires a camera (vehicle mounted).</p>
+      <p>A transmitter is connected to the camera to 'transmit' the image (vehicle mounted).</p>
+      <p>A receiver is required to 'receive' the image from the vehicle mounted transmitter (ground station mounted).</p>
+      <p> A display is connected to the receiver unit. This displays the received image</p>
+    </section>
+
+    <section class="main-section" id ="fpv_system_types">
+      <header>FPV system types</header>
+      <p>FPV systems generally come in two flavours:</p>
+      <ul>
+        <li>Analogue</li>
+        <li>Digital</li>
+      </ul>
+      <p>Analogue systems are generally cheaper than digital.</p>
+      <p>Analogue systems generally have a lower latency than digital systems.</p>
+      <p>Analogue systems generally have a lower image quality compared to digital.</p>
+      
+
+    </section>
+
+    <section class="main-section"  id="latency">
+      <header>Latency</header>
+      <p>Latency is the time lost between transmitting and receiving data. If you are familiar with the term lag, this may be easier to understand. This is normally measured in (ms) and lower latency is desired in FPV systems. If a system had a latency of 10 secs, the image you receive is effectively 10 secs old. This means you could have hit an obstacle and you would not know until 10 secs had passed. </p>
+    </section>
+    <section class="main-section" id="for_code_test">
+      <header>For code test</header>
+      <code>if iq > 10; console.log("winner") </code>
+      <code>if gps > 3; console.log("GPS good") </code>
+      <code>if lq > 75;  console.log("link good") </code>
+      <code>if rssi > 80; console.log("RSSI good") </code>
+      <code>if autolaunch = true; console.log("Launch") </code>
+    </section>
+
+  </main>
+  <nav id="navbar">
+    <header>FPV Documentation</header>
+      <ul>
+      <li> <a class="nav-link" href="#introduction">Introduction</a></li>
+      <li> <a class="nav-link" href="#what_you_should_already_know">What you should already know</a></li>
+      <li> <a class="nav-link" href="#basic_fpv_system_components">Basic FPV system components</a></li>
+      <li> <a class="nav-link" href="#fpv_system_types">FPV system types</a></li>
+      <li> <a class="nav-link" href="#latency">Latency</a></li>
+      <li> <a class="nav-link" href="#for_code_test">For code test</a></li>
+    </ul>
+  </nav>
+  </body>
+  
+</html>
